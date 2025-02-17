@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Ex2</title>
+    <script src="java.js"></script>
+</head>
+<body>
+    <div class="container text-center">
+        <div class="row align-items-center text-center mt-4">
+            <div class="col">
+                <label for="couleur" class="form-label fw-bold">Text Color :</label>
+                <input type="color" name="couleur" id="couleur" class="form-control" value="#000000" onchange="changecolor()">
+            </div>
+            <div class="col">
+                <label for="taille" class="form-label fw-bold">Text Size (Px) :</label>
+                <input type="number" name="taille" id="taille" class="form-control" min="5" value="16" onchange="changesize()">
+            </div>
+            <div class="col">
+                <label for="type" class="form-label fw-bold">Text Family</label>
+                <select name="type" id="type" class="form-select" onchange="changefamily(this.value)">
+                    <option value="arial">Arial</option>
+                    <option value="times">Times</option>
+                    <option value="courier">Courier</option>
+                    <option value="verdana">Verdana</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="row align-items-center text-center mt-4">
+            <div class="col">
+                <div id="texte" class="fw-bold" style="font-size: 16px; color: #000000; font-family: Arial, sans-serif;"">Bonjour Monsieur! J'éspere que vous allez bien</div>
+            </div>
+    </div>
+    
+</body>
+</html>

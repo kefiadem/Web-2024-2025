@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de cartes</title>    
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="jv.js"></script>
+</head>
+<body onload="start()" >
+    <div class="container">
+        <div class="fs-2 text-success text-center">Jeu du chiffre caché !</div>
+        <div class="row align-items-center text-center mt-4">
+            <div class="col-6 alert alert-primary">
+                <label for="difficulty" class="form-label fw-bold d-block">Choisir la difficulté :</label>
+                <div class="d-flex">
+                <select id="difficulty" class="form-select me-2">
+                    <option value="easy">Facile</option>
+                    <option value="medium">Intermédiaire</option>
+                    <option value="hard">Difficile</option>
+                </select>
+                <button id="button1" class="btn btn-success" onclick="unlock()">Confirm</button>
+            </div>
+            </div>
+            <div class="col-6 alert alert-danger">
+                <label for="choix" class="form-label fw-bold">Choisir un chiffre caché :
+                    <div class="d-flex">
+                    <input type="number" name="choix" id="choix" class="form-control" min="0" max="0" value="0" disabled>
+                    <button id="button2" class="btn btn-success" onclick="check()">Try</button>
+                </div>
+                </div>
+        </div>
+        
+        <div class="row align-items-center text-center mt-4">
+            <div class="col-4 text-center alert alert-primary">
+                <label for="nbre" class="form-label">Nombre des tentatives restantes :
+                    <span id="nbre" class="fw-bold fs-6">0</span>
+                </label>
+            </div>
+            <div class="col-8" id="message"></div>
+        </div>
+    </div>
+</body>
+</html>

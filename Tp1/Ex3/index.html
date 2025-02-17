@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ex3</title>
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .todo-container {
+      max-width: 600px;
+      margin: auto;
+    }
+    .card {
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .list-group-item {
+      border-left: 5px solid #007bff;
+      border-radius: 5px;
+    }
+  </style>
+  <script src="java.js"></script>
+</head>
+
+<body class="bg-light">
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card p-3">
+          <h3 class="text-center mb-3">To-Do</h3>
+          <ul id="todoList" class="list-group"></ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h5 class="text-center">Add Here</h5>
+          <form id="todoForm">
+            <div class="mb-2">
+              <input type="text" id="nameInput" class="form-control" placeholder="Name" required>
+            </div>
+            <div class="mb-2">
+              <input type="text" id="todoInput" class="form-control" placeholder="Task" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Add</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
