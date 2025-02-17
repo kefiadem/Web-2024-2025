@@ -1,18 +1,18 @@
-./Ex1-Methode1/node_modules
-./Ex1-Methode2/node_modules
-./Ex2/node_modules
-./Ex3/node_modules
-./Ex4/node_modules
+TP1/Ex1-Methode1/node_modules
+TP1/Ex1-Methode2/node_modules
+TP1/Ex2/node_modules
+TP1/Ex3/node_modules
+TP1/Ex4/node_modules
 
-./Ex1-Methode1/package-lock.json
-./Ex1-Methode2/package-lock.json
-./Ex2/package-lock.json
-./Ex3/package-lock.json
-./Ex4/package-lock.json
+TP1/Ex1-Methode1/package-lock.json
+TP1/Ex1-Methode2/package-lock.json
+TP1/Ex2/package-lock.json
+TP1/Ex3/package-lock.json
+TP1/Ex4/package-lock.json
 
 
-./Ex1-Methode1/package.json
-./Ex1-Methode2/package.json
-./Ex2/package.json
-./Ex3/package.json
-./Ex4/package.json
+TP1/Ex1-Methode1/package.json
+TP1/Ex1-Methode2/package.json
+TP1/Ex2/package.json
+TP1/Ex3/package.json
+TP1/Ex4/package.json
